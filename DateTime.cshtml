@@ -1,0 +1,5 @@
+﻿@model DateTime?
+@if (Model != null)
+{
+    <span data-date="@(((DateTime)Model).Subtract(new DateTime(1970, 1, 1)).TotalMilliseconds)">@Model.ToString()</span>    
+}
